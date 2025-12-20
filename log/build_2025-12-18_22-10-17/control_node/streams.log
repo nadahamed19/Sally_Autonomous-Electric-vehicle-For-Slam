@@ -1,0 +1,60 @@
+[0.018s] Invoking command in '/home/kemo/Sally_ws/build/control_node': /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.126s] -- The CXX compiler identification is GNU 11.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.201s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.202s] -- Detecting C compile features
+[0.202s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.277s] -- Detecting CXX compiler ABI info - done
+[0.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.282s] -- Detecting CXX compile features
+[0.282s] -- Detecting CXX compile features - done
+[0.291s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.419s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.517s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.575s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.582s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.593s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.607s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.625s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.678s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.681s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.709s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.720s] -- Looking for pthread.h
+[0.790s] -- Looking for pthread.h - found
+[0.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.857s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.858s] -- Found Threads: TRUE  
+[0.911s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.925s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.939s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.981s] Error parsing '/home/kemo/Sally_ws/src/control_node/package.xml':
+[1.027s] Traceback (most recent call last):
+[1.027s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[1.027s]     main()
+[1.027s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[1.027s]     raise e
+[1.027s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[1.027s]     package = parse_package_string(
+[1.027s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.027s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.027s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/kemo/Sally_ws/src/control_node/package.xml':
+[1.027s] Error(s):
+[1.027s] - The generic dependency on 'geometry_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[1.044s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.044s]   execute_process(/usr/bin/python3
+[1.044s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.044s]   /home/kemo/Sally_ws/src/control_node/package.xml
+[1.044s]   /home/kemo/Sally_ws/build/control_node/ament_cmake_core/package.cmake)
+[1.044s]   returned error code 1
+[1.044s] Call Stack (most recent call first):
+[1.045s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.045s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.045s]   CMakeLists.txt:26 (ament_lint_auto_find_test_dependencies)
+[1.045s] 
+[1.045s] [0m
+[1.045s] -- Configuring incomplete, errors occurred!
+[1.045s] See also "/home/kemo/Sally_ws/build/control_node/CMakeFiles/CMakeOutput.log".
+[1.056s] Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '1': /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node

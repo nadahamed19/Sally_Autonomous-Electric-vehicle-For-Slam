@@ -1,0 +1,336 @@
+[0.078s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.078s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b602ee5f130>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b602ee5eb30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b602ee5eb30>>, mixin_verb=('build',))
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.209s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kemo/Sally_ws'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_node) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control_node' with type 'ros.ament_cmake' and name 'control_node'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybertruck_description) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cybertruck_description' with type 'ros.ament_cmake' and name 'cybertruck_description'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_sensor_pkg) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_sensor_pkg' with type 'ros.ament_cmake' and name 'my_sensor_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot-localization(13)) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot-localization(13)' with type 'ros.ament_cmake' and name 'robot_localization'
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/kemo/ros_ws/install
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/kemo/description/install
+[0.248s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 467 installed packages in /opt/ros/humble
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_target' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'control_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'control_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kemo/Sally_ws/build/control_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kemo/Sally_ws/install/control_node', 'merge_install': False, 'path': '/home/kemo/Sally_ws/src/control_node', 'symlink_install': False, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'cybertruck_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'cybertruck_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kemo/Sally_ws/build/cybertruck_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kemo/Sally_ws/install/cybertruck_description', 'merge_install': False, 'path': '/home/kemo/Sally_ws/src/cybertruck_description', 'symlink_install': False, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'my_sensor_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'my_sensor_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kemo/Sally_ws/build/my_sensor_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kemo/Sally_ws/install/my_sensor_pkg', 'merge_install': False, 'path': '/home/kemo/Sally_ws/src/my_sensor_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.292s] DEBUG:colcon.colcon_core.verb:Building package 'robot_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kemo/Sally_ws/build/robot_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kemo/Sally_ws/install/robot_localization', 'merge_install': False, 'path': '/home/kemo/Sally_ws/src/robot-localization(13)', 'symlink_install': False, 'test_result_base': None}
+[0.292s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.293s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kemo/Sally_ws/src/control_node' with build type 'ament_cmake'
+[0.293s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kemo/Sally_ws/src/control_node'
+[0.294s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kemo/Sally_ws/src/cybertruck_description' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kemo/Sally_ws/src/cybertruck_description'
+[0.298s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.298s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.301s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kemo/Sally_ws/src/my_sensor_pkg' with build type 'ament_cmake'
+[0.301s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kemo/Sally_ws/src/my_sensor_pkg'
+[0.302s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.302s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.305s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kemo/Sally_ws/src/robot-localization(13)' with build type 'ament_cmake'
+[0.305s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kemo/Sally_ws/src/robot-localization(13)'
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/control_node': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node
+[0.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/cybertruck_description': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/cybertruck_description -- -j16 -l16
+[0.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/my_sensor_pkg': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/my_sensor_pkg -- -j16 -l16
+[0.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/robot_localization': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/robot_localization -- -j16 -l16
+[0.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/cybertruck_description' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/cybertruck_description -- -j16 -l16
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/cybertruck_description': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/cybertruck_description
+[0.368s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybertruck_description)
+[0.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/cybertruck_description' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/cybertruck_description
+[0.374s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description' for CMake module files
+[0.374s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description' for CMake config files
+[0.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybertruck_description', 'cmake_prefix_path')
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.ps1'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.dsv'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.sh'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/bin'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib/pkgconfig/cybertruck_description.pc'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib/python3.10/site-packages'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/bin'
+[0.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.ps1'
+[0.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.dsv'
+[0.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.sh'
+[0.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.bash'
+[0.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.zsh'
+[0.380s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/cybertruck_description/share/colcon-core/packages/cybertruck_description)
+[0.381s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybertruck_description)
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description' for CMake module files
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description' for CMake config files
+[0.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybertruck_description', 'cmake_prefix_path')
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.ps1'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.dsv'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/hook/cmake_prefix_path.sh'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/bin'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib/pkgconfig/cybertruck_description.pc'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/lib/python3.10/site-packages'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/cybertruck_description/bin'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.ps1'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.dsv'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.sh'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.bash'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.zsh'
+[0.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/cybertruck_description/share/colcon-core/packages/cybertruck_description)
+[0.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/my_sensor_pkg' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/my_sensor_pkg -- -j16 -l16
+[0.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/my_sensor_pkg': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/my_sensor_pkg
+[0.399s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_sensor_pkg)
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg' for CMake module files
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/my_sensor_pkg' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/my_sensor_pkg
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg' for CMake config files
+[0.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_sensor_pkg', 'cmake_prefix_path')
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.ps1'
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.dsv'
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.sh'
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib'
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/bin'
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib/pkgconfig/my_sensor_pkg.pc'
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib/python3.10/site-packages'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/bin'
+[0.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.ps1'
+[0.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.sh'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.bash'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.zsh'
+[0.403s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/my_sensor_pkg/share/colcon-core/packages/my_sensor_pkg)
+[0.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_sensor_pkg)
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg' for CMake module files
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg' for CMake config files
+[0.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_sensor_pkg', 'cmake_prefix_path')
+[0.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.ps1'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.dsv'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/hook/cmake_prefix_path.sh'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/bin'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib/pkgconfig/my_sensor_pkg.pc'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/lib/python3.10/site-packages'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/my_sensor_pkg/bin'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.sh'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.bash'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.zsh'
+[0.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/my_sensor_pkg/share/colcon-core/packages/my_sensor_pkg)
+[0.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node
+[0.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/control_node': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/control_node -- -j16 -l16
+[8.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/control_node -- -j16 -l16
+[8.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/control_node': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/control_node
+[8.750s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_node)
+[8.750s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node' for CMake module files
+[8.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/control_node
+[8.751s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node' for CMake config files
+[8.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_node', 'cmake_prefix_path')
+[8.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.ps1'
+[8.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.dsv'
+[8.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.sh'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/bin'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib/pkgconfig/control_node.pc'
+[8.753s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib/python3.10/site-packages'
+[8.753s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/bin'
+[8.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.ps1'
+[8.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/control_node/share/control_node/package.dsv'
+[8.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.sh'
+[8.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.bash'
+[8.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.zsh'
+[8.754s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/control_node/share/colcon-core/packages/control_node)
+[8.755s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_node)
+[8.755s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node' for CMake module files
+[8.755s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node' for CMake config files
+[8.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_node', 'cmake_prefix_path')
+[8.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.ps1'
+[8.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.dsv'
+[8.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/control_node/share/control_node/hook/cmake_prefix_path.sh'
+[8.756s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib'
+[8.757s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/bin'
+[8.757s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib/pkgconfig/control_node.pc'
+[8.757s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/lib/python3.10/site-packages'
+[8.757s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/control_node/bin'
+[8.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.ps1'
+[8.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/control_node/share/control_node/package.dsv'
+[8.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.sh'
+[8.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.bash'
+[8.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/control_node/share/control_node/package.zsh'
+[8.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/control_node/share/colcon-core/packages/control_node)
+[20.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/robot_localization -- -j16 -l16
+[20.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kemo/Sally_ws/build/robot_localization': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/robot_localization
+[20.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_localization)
+[20.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kemo/Sally_ws/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/robot_localization
+[20.740s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization' for CMake module files
+[20.742s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization' for CMake config files
+[20.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_localization', 'cmake_prefix_path')
+[20.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.ps1'
+[20.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.dsv'
+[20.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.sh'
+[20.764s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib'
+[20.764s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/bin'
+[20.765s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib/pkgconfig/robot_localization.pc'
+[20.770s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib/python3.10/site-packages'
+[20.770s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/bin'
+[20.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.ps1'
+[20.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.dsv'
+[20.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.sh'
+[20.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.bash'
+[20.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.zsh'
+[20.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/robot_localization/share/colcon-core/packages/robot_localization)
+[20.778s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_localization)
+[20.778s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization' for CMake module files
+[20.779s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization' for CMake config files
+[20.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_localization', 'cmake_prefix_path')
+[20.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.ps1'
+[20.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.dsv'
+[20.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/hook/cmake_prefix_path.sh'
+[20.781s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib'
+[20.781s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/bin'
+[20.781s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib/pkgconfig/robot_localization.pc'
+[20.781s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/lib/python3.10/site-packages'
+[20.782s] Level 1:colcon.colcon_core.environment:checking '/home/kemo/Sally_ws/install/robot_localization/bin'
+[20.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.ps1'
+[20.782s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.dsv'
+[20.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.sh'
+[20.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.bash'
+[20.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.zsh'
+[20.784s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kemo/Sally_ws/install/robot_localization/share/colcon-core/packages/robot_localization)
+[20.787s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.790s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.834s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.834s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.834s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.846s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kemo/Sally_ws/install/local_setup.ps1'
+[20.850s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kemo/Sally_ws/install/_local_setup_util_ps1.py'
+[20.851s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kemo/Sally_ws/install/setup.ps1'
+[20.854s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kemo/Sally_ws/install/local_setup.sh'
+[20.855s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kemo/Sally_ws/install/_local_setup_util_sh.py'
+[20.855s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kemo/Sally_ws/install/setup.sh'
+[20.858s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kemo/Sally_ws/install/local_setup.bash'
+[20.859s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kemo/Sally_ws/install/setup.bash'
+[20.860s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kemo/Sally_ws/install/local_setup.zsh'
+[20.860s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kemo/Sally_ws/install/setup.zsh'

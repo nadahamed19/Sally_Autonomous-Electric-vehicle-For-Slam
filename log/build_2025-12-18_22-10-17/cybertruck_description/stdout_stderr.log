@@ -1,0 +1,89 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kemo/Sally_ws/build/cybertruck_description
+-- Install configuration: ""
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/cybertruck.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/mapper_params_online_async.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/[200~navigation.rviz~
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/ekf.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/bridge.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/nav2_params.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/navigation.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//config/nav2_params_real.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//launch
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//launch/navigation_real.launch.py
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//launch/teleop.launch.py
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//launch/slam_real.launch.py
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/B_RIGHT.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/F_RIGHT.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/base_link.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/B_LEFT.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/Lidae.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/meshes/F_LEFT.STL
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/model.config
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/materials
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/materials/scripts
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/materials/scripts/eyes.material
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/materials/textures
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/materials/textures/eyes.png
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//models/cybertruck/model.sdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//urdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//urdf/cybertruck.urdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//worlds
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//worlds/cybertruck_world.sdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//worlds/cybertruck_.sdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//worlds/cybertruck_worldold.sdf
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//materials
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//materials/scripts
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//materials/scripts/eyes.material
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//materials/textures
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//materials/textures/eyes.png
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz/lidar.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz/slam.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz/cybertruck_simulation.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz/navigation.rviz
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//rvizz/rviz.launch.py
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//maps
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//maps/my_map.yaml
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description//maps/my_map.pgm
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/lib/cybertruck_description/odom_to_tf.py
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/ament_index/resource_index/package_run_dependencies/cybertruck_description
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/ament_index/resource_index/parent_prefix_path/cybertruck_description
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/environment/ament_prefix_path.sh
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/environment/ament_prefix_path.dsv
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/environment/path.sh
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/environment/path.dsv
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/local_setup.bash
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/local_setup.sh
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/local_setup.zsh
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/local_setup.dsv
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.dsv
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/ament_index/resource_index/packages/cybertruck_description
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/cmake/cybertruck_descriptionConfig.cmake
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/cmake/cybertruck_descriptionConfig-version.cmake
+-- Installing: /home/kemo/Sally_ws/install/cybertruck_description/share/cybertruck_description/package.xml

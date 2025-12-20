@@ -1,0 +1,24 @@
+standard_localization_node:
+  ros__parameters:
+    # Frame IDs
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    
+    # EKF Parameters
+    initial_covariance: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    process_noise: [0.01, 0.01, 0.01, 0.1, 0.1, 0.1]
+    
+    # Measurement noise
+    odom_noise: [0.05, 0.05, 0.02]  # x, y, theta
+    imu_noise: [0.01]               # angular velocity
+    
+    # Fusion weights
+    odom_weight: 0.7
+    tf_weight: 0.3
+    
+    # Topic names
+    odom_topic: "/odom"
+    tf_topic: "/tf"
+    imu_topic: "/imu/data"
+    output_odom_topic: "/localization/odometry"
+    output_pose_topic: "/localization/pose"

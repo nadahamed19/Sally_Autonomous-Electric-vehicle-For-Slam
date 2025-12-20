@@ -1,0 +1,18 @@
+<!-- ==================== WINDSHIELD IMAGE ==================== -->
+<visual name="windshield_visual">
+  <pose>0.13 0 0.075 0 -0.95 0</pose>
+  <geometry>
+    <box>
+      <size>0.002 0.25 0.15</size>
+    </box>
+  </geometry>
+  <material>
+    <ambient>1 1 1 1</ambient>
+    <diffuse>1 1 1 1</diffuse>
+    <pbr>
+      <metal>
+        <albedo_map>/home/kemo/cybertruck_ws/src/cybertruck_description/materials/textures/eyes.png</albedo_map>
+      </metal>
+    </pbr>
+  </material>
+</visual>

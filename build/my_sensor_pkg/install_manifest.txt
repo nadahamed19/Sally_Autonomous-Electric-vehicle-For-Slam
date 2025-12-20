@@ -1,0 +1,16 @@
+/home/kemo/Sally_ws/install/my_sensor_pkg/lib/my_sensor_pkg/imu_encoder_node
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/package_run_dependencies/my_sensor_pkg
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/parent_prefix_path/my_sensor_pkg
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/ament_prefix_path.sh
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/ament_prefix_path.dsv
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/path.sh
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/path.dsv
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.bash
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.sh
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.zsh
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.dsv
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.dsv
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/packages/my_sensor_pkg
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/cmake/my_sensor_pkgConfig.cmake
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/cmake/my_sensor_pkgConfig-version.cmake
+/home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.xml

@@ -1,0 +1,2 @@
+Invoking command in '/home/kemo/Sally_ws/build/control_node': /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node
+Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '1': /usr/bin/cmake /home/kemo/Sally_ws/src/control_node -DCMAKE_INSTALL_PREFIX=/home/kemo/Sally_ws/install/control_node

@@ -1,0 +1,14 @@
+digraph G {
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 50.202\nBuffer length: 4.96\nMost recent transform: 224.04\nOldest transform: 219.08\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 224.2\nOldest transform: 219.2\n"];
+"Lidar" -> "cybertruck/Lidar/lidar"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "Lidar"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"cybertruck" -> "cybertruck/F_LEFT"[label=" Broadcaster: default_authority\nAverage rate: 1000.201\nBuffer length: 4.967\nMost recent transform: 224.067\nOldest transform: 219.1\n"];
+"cybertruck" -> "cybertruck/B_LEFT"[label=" Broadcaster: default_authority\nAverage rate: 1000.201\nBuffer length: 4.967\nMost recent transform: 224.067\nOldest transform: 219.1\n"];
+"cybertruck" -> "cybertruck/B_RIGHT"[label=" Broadcaster: default_authority\nAverage rate: 1000.201\nBuffer length: 4.967\nMost recent transform: 224.067\nOldest transform: 219.1\n"];
+"cybertruck" -> "cybertruck/F_RIGHT"[label=" Broadcaster: default_authority\nAverage rate: 1000.201\nBuffer length: 4.967\nMost recent transform: 224.067\nOldest transform: 219.1\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1765496664.6525986"[ shape=plaintext ] ;
+}->"cybertruck";
+}

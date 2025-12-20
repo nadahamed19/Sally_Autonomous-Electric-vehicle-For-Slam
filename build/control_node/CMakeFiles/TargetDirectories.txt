@@ -1,0 +1,10 @@
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/uninstall.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/control_node_uninstall.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/control_node.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/test.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/edit_cache.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/rebuild_cache.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/list_install_components.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/install.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/install/local.dir
+/home/kemo/Sally_ws/build/control_node/CMakeFiles/install/strip.dir

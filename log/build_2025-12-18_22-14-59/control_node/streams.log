@@ -1,0 +1,23 @@
+[0.019s] Invoking command in '/home/kemo/Sally_ws/build/control_node': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/control_node -- -j16 -l16
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.075s] [100%] Built target control_node
+[0.088s] Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/control_node -- -j16 -l16
+[0.090s] Invoking command in '/home/kemo/Sally_ws/build/control_node': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/control_node
+[0.111s] -- Install configuration: ""
+[0.111s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/lib/control_node/control_node
+[0.111s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/ament_index/resource_index/package_run_dependencies/control_node
+[0.111s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/ament_index/resource_index/parent_prefix_path/control_node
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/environment/ament_prefix_path.dsv
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/environment/path.sh
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/environment/path.dsv
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/local_setup.bash
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/local_setup.sh
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/local_setup.zsh
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/local_setup.dsv
+[0.112s] -- Installing: /home/kemo/Sally_ws/install/control_node/share/control_node/package.dsv
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/ament_index/resource_index/packages/control_node
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/cmake/control_nodeConfig.cmake
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/cmake/control_nodeConfig-version.cmake
+[0.112s] -- Up-to-date: /home/kemo/Sally_ws/install/control_node/share/control_node/package.xml
+[0.112s] Invoked command in '/home/kemo/Sally_ws/build/control_node' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/control_node

@@ -1,0 +1,56 @@
+[0.015s] Invoking command in '/home/kemo/Sally_ws/build/robot_localization': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/robot_localization -- -j16 -l16
+[0.062s] [ 10%] [32mBuilding CXX object CMakeFiles/localization_node.dir/src/localization_node.cpp.o[0m
+[0.062s] [ 20%] [32mBuilding CXX object CMakeFiles/raspberry_localization_node.dir/src/raspberry_localization_node.cpp.o[0m
+[0.065s] [ 30%] [32mBuilding CXX object CMakeFiles/odom_tf_fusion_node.dir/src/odom_tf_fusion_node.cpp.o[0m
+[0.065s] [ 40%] [32mBuilding CXX object CMakeFiles/odom_imu_fusion_node.dir/src/odom_imu_fusion_node.cpp.o[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/standard_localization_node.dir/src/standard_localization_node.cpp.o[0m
+[17.941s] [ 70%] [32m[1mLinking CXX executable odom_tf_fusion_node[0m
+[17.945s] [ 70%] [32m[1mLinking CXX executable raspberry_localization_node[0m
+[18.040s] [ 80%] [32m[1mLinking CXX executable localization_node[0m
+[18.050s] [ 90%] [32m[1mLinking CXX executable odom_imu_fusion_node[0m
+[19.604s] [100%] [32m[1mLinking CXX executable standard_localization_node[0m
+[19.666s] [100%] Built target raspberry_localization_node
+[19.667s] [100%] Built target odom_tf_fusion_node
+[19.671s] [100%] Built target localization_node
+[19.732s] [100%] Built target odom_imu_fusion_node
+[20.251s] [100%] Built target standard_localization_node
+[20.327s] Invoked command in '/home/kemo/Sally_ws/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --build /home/kemo/Sally_ws/build/robot_localization -- -j16 -l16
+[20.371s] Invoking command in '/home/kemo/Sally_ws/build/robot_localization': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/robot_localization
+[20.379s] -- Install configuration: ""
+[20.379s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/raspberry_localization_node
+[20.387s] -- Set runtime path of "/home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/raspberry_localization_node" to ""
+[20.387s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/localization_node
+[20.393s] -- Set runtime path of "/home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/localization_node" to ""
+[20.394s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/standard_localization_node
+[20.402s] -- Set runtime path of "/home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/standard_localization_node" to ""
+[20.402s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/odom_imu_fusion_node
+[20.409s] -- Set runtime path of "/home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/odom_imu_fusion_node" to ""
+[20.409s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/odom_tf_fusion_node
+[20.416s] -- Set runtime path of "/home/kemo/Sally_ws/install/robot_localization/lib/robot_localization/odom_tf_fusion_node" to ""
+[20.416s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch
+[20.416s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/odom_imu_fusion_launch.py
+[20.416s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/simple_launch.py
+[20.416s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/odom_tf_fusion_launch.py
+[20.417s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/localization_launch.py
+[20.417s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/robot_localization_launch.py
+[20.417s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/raspberry_localization.launch.py
+[20.417s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/all_localization_nodes.launch.py
+[20.417s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/launch/localization.launch.py
+[20.418s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/config
+[20.418s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/config/localization_params.yaml
+[20.418s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/ament_index/resource_index/package_run_dependencies/robot_localization
+[20.419s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/ament_index/resource_index/parent_prefix_path/robot_localization
+[20.419s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/environment/ament_prefix_path.sh
+[20.419s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/environment/ament_prefix_path.dsv
+[20.419s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/environment/path.sh
+[20.420s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/environment/path.dsv
+[20.420s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/local_setup.bash
+[20.420s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/local_setup.sh
+[20.420s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/local_setup.zsh
+[20.421s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/local_setup.dsv
+[20.421s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.dsv
+[20.421s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/ament_index/resource_index/packages/robot_localization
+[20.421s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig.cmake
+[20.421s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig-version.cmake
+[20.422s] -- Installing: /home/kemo/Sally_ws/install/robot_localization/share/robot_localization/package.xml
+[20.431s] Invoked command in '/home/kemo/Sally_ws/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/kemo/ros_ws/install/my_robot_bringup:/home/kemo/ros_ws/install/my_cpp_pkg:/home/kemo/ros_ws/install/my_robot_interfaces:/home/kemo/ros_ws/install/my_py_pkg:/opt/ros/humble:/home/kemo/description/install/assem1 /usr/bin/cmake --install /home/kemo/Sally_ws/build/robot_localization

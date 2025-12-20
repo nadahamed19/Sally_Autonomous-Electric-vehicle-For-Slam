@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="cybertruck">
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- BASE LINK - مركز الروبوت                                           -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.0379982684310929 -0.00110022256685266 0.00198599551633491" rpy="0 0 0"/>
+      <mass value="2.09976516272309"/>
+      <inertia
+        ixx="0.0126086448441908" ixy="-5.89895937514638E-11" ixz="-0.000272982789996325"
+        iyy="0.0301039790905408" iyz="-4.64608612399327E-18"
+        izz="0.0403116330847329"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/base_link.STL"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.250980392156863 0.250980392156863 0.250980392156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/base_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- BASE FOOTPRINT - نقطة على الأرض تحت الروبوت                        -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="base_footprint"/>
+  
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <origin xyz="0 0 -0.034" rpy="0 0 0"/>
+    <!-- z = -0.034 (نفس ارتفاع العجلات السالب = على الأرض) -->
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- FRONT RIGHT WHEEL                                                  -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="F_RIGHT">
+    <inertial>
+      <origin xyz="0 0.011 0" rpy="0 0 0"/>
+      <mass value="1.91302130627162"/>
+      <inertia
+        ixx="0.00230547150482197" ixy="0" ixz="0"
+        iyy="0.00445088636326488" iyz="0"
+        izz="0.00230547150482197"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/F_RIGHT.STL"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/F_RIGHT.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="F_RIGHT_joint" type="continuous">
+    <origin xyz="0.099 -0.156 -0.034" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="F_RIGHT"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- BACK RIGHT WHEEL                                                   -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="B_RIGHT">
+    <inertial>
+      <origin xyz="0 0.011 0" rpy="0 0 0"/>
+      <mass value="1.91302130627162"/>
+      <inertia
+        ixx="0.00230547150482197" ixy="0" ixz="0"
+        iyy="0.00445088636326488" iyz="0"
+        izz="0.00230547150482197"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/B_RIGHT.STL"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/B_RIGHT.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="B_RIGHT_joint" type="continuous">
+    <origin xyz="-0.171 -0.156 -0.034" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="B_RIGHT"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- BACK LEFT WHEEL                                                    -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="B_LEFT">
+    <inertial>
+      <origin xyz="0 -0.0005 0" rpy="0 0 0"/>
+      <mass value="1.91302130627162"/>
+      <inertia
+        ixx="0.00230547150482197" ixy="0" ixz="0"
+        iyy="0.00445088636326488" iyz="0"
+        izz="0.00230547150482197"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/B_LEFT.STL"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/B_LEFT.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="B_LEFT_joint" type="continuous">
+    <origin xyz="-0.171 0.143 -0.034" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="B_LEFT"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- FRONT LEFT WHEEL                                                   -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="F_LEFT">
+    <inertial>
+      <origin xyz="0.007 -0.0005 0" rpy="0 0 0"/>
+      <mass value="1.91302130627162"/>
+      <inertia
+        ixx="0.00230547150482197" ixy="0" ixz="0"
+        iyy="0.00445088636326488" iyz="0"
+        izz="0.00230547150482197"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/F_LEFT.STL"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/F_LEFT.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="F_LEFT_joint" type="continuous">
+    <origin xyz="0.092 0.143 -0.034" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="F_LEFT"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- LIDAR - المجسم البصري للليدار                                      -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="Lidar">
+    <inertial>
+      <origin xyz="0.007 0 -0.022" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.0001" ixy="0" ixz="0"
+        iyy="0.0001" iyz="0"
+        izz="0.0001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cybertruck_description/models/cybertruck/meshes/Lidae.STL"/>
+      </geometry>
+      <material name="orange">
+        <color rgba="0.984313725490196 0.737254901960784 0.466666666666667 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.07"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="Lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="Lidar"/>
+    <origin xyz="-0.008 0.0 0.176" rpy="0 0 0"/>
+    <!--          │     │    │
+                  │     │    └── فوق المركز بـ 17.6 سم
+                  │     └─────── في النص
+                  └──────────── ورا المركز بـ 8 مم
+    -->
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- LASER FRAME - نقطة خروج شعاع الليزر (مهم جداً للـ SLAM!)           -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="laser_frame"/>
+  
+  <joint name="laser_frame_joint" type="fixed">
+    <parent link="Lidar"/>
+    <child link="laser_frame"/>
+    <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    <!--              │
+                      └── فوق مركز الليدار بـ 2 سم (مكان شعاع الليزر)
+    -->
+  </joint>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- IMU LINK - مكان حساس الـ IMU                                       -->
+  <!-- غير الأرقام دي حسب مكان الـ IMU الحقيقي على روبوتك                 -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <link name="imu_link"/>
+  
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <!--          │  │   │
+                  │  │   └── فوق المركز بـ 5 سم (عدّل حسب مكان الـ IMU عندك)
+                  │  └────── في النص
+                  └───────── في النص
+    -->
+  </joint>
+
+</robot>

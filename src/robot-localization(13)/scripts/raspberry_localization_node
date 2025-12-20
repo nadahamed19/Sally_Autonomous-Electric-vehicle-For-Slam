@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+
+# Add the package to Python path
+package_dir = os.path.join(os.path.dirname(__file__), '..', 'robot_localization')
+sys.path.insert(0, os.path.dirname(package_dir))
+
+# NumPy compatibility fix
+import numpy as np
+if not hasattr(np, 'float'):
+    np.float = float
+
+# Import and run the main function
+from robot_localization.raspberry_localization_node import main
+
+if __name__ == '__main__':
+    main()

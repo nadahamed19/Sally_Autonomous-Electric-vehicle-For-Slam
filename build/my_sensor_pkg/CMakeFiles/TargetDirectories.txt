@@ -1,0 +1,10 @@
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/uninstall.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/my_sensor_pkg_uninstall.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/imu_encoder_node.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/test.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/edit_cache.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/rebuild_cache.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/list_install_components.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/install.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/install/local.dir
+/home/kemo/Sally_ws/build/my_sensor_pkg/CMakeFiles/install/strip.dir

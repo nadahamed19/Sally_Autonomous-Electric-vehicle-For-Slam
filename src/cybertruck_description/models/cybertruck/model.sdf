@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="cybertruck">
+    <static>false</static>
+    <self_collide>false</self_collide>
+
+    <!-- ==================== BASE LINK ==================== -->
+    <link name="base_link">
+      <inertial>
+        <pose>-0.0379982684310929 -0.00110022256685266 0.00198599551633491 0 0 0</pose>
+        <mass>2.09976516272309</mass>
+        <inertia>
+          <ixx>0.0126086448441908</ixx>
+          <ixy>-5.89895937514638E-11</ixy>
+          <ixz>-0.000272982789996325</ixz>
+          <iyy>0.0301039790905408</iyy>
+          <iyz>-4.64608612399327E-18</iyz>
+          <izz>0.0403116330847329</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="base_link_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/base_link.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="base_link_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/base_link.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+            <ambient>0.42 0.63 0.81 1.0</ambient>
+            <diffuse>0.42 0.63 0.81 1.0</diffuse>
+            <specular>0.5 0.5 0.5 1.0</specular>
+            <emissive>0.0 0.0 0.0 1.0</emissive>
+        </material>
+      </visual>
+
+      <!-- ==================== WINDSHIELD IMAGE ==================== -->
+      <visual name="windshield_visual">
+        <pose>0.135 0 0.075 0 -0.95 0</pose>
+        <geometry>
+          <box>
+            <size>0.002 0.245 0.145</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.6 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0.1 0.1 0.1 1</emissive>
+          <pbr>
+            <metal>
+              <albedo_map>././materials/textures/eyes.png</albedo_map>
+              <metalness>0</metalness>
+              <roughness>1</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <!-- IMU Sensor on base_link -->
+      <sensor name="imu_sensor" type="imu">
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <topic>imu</topic>
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
+      </sensor>
+    </link>
+
+    <!-- ==================== FRONT RIGHT WHEEL ==================== -->
+    <link name="F_RIGHT">
+      <pose relative_to="F_RIGHT_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0.011 0 0 0 0</pose>
+        <mass>1.91302130627162</mass>
+        <inertia>
+          <ixx>0.00230547150482197</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00445088636326488</iyy>
+          <iyz>0</iyz>
+          <izz>0.00230547150482197</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="F_RIGHT_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/F_RIGHT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="F_RIGHT_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/F_RIGHT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="F_RIGHT_joint" type="revolute">
+      <pose relative_to="base_link">0.099171422192355 -0.155537254079128 -0.0344338642916649 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>F_RIGHT</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== BACK RIGHT WHEEL ==================== -->
+    <link name="B_RIGHT">
+      <pose relative_to="B_RIGHT_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0.011 0 0 0 0</pose>
+        <mass>1.91302130627162</mass>
+        <inertia>
+          <ixx>0.00230547150482197</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00445088636326488</iyy>
+          <iyz>0</iyz>
+          <izz>0.00230547150482197</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="B_RIGHT_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/B_RIGHT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="B_RIGHT_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/B_RIGHT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="B_RIGHT_joint" type="revolute">
+      <pose relative_to="base_link">-0.170887564245272 -0.155537254079128 -0.0344338642916681 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>B_RIGHT</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== BACK LEFT WHEEL ==================== -->
+    <link name="B_LEFT">
+      <pose relative_to="B_LEFT_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 -0.0005 0 0 0 0</pose>
+        <mass>1.91302130627162</mass>
+        <inertia>
+          <ixx>0.00230547150482197</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00445088636326488</iyy>
+          <iyz>0</iyz>
+          <izz>0.00230547150482197</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="B_LEFT_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/B_LEFT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="B_LEFT_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/B_LEFT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="B_LEFT_joint" type="revolute">
+      <pose relative_to="base_link">-0.170887564245271 0.142835945920872 -0.0344338642916647 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>B_LEFT</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== FRONT LEFT WHEEL ==================== -->
+    <link name="F_LEFT">
+      <pose relative_to="F_LEFT_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.007 -0.0005 0 0 0 0</pose>
+        <mass>1.91302130627162</mass>
+        <inertia>
+          <ixx>0.00230547150482197</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00445088636326488</iyy>
+          <iyz>0</iyz>
+          <izz>0.00230547150482197</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="F_LEFT_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/F_LEFT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="F_LEFT_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/F_LEFT.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="F_LEFT_joint" type="revolute">
+      <pose relative_to="base_link">0.0921714221923555 0.142835945920872 -0.0344338642916658 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>F_LEFT</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== LIDAR ==================== -->
+    <link name="Lidar">
+      <pose relative_to="Lidar_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.007 0 -0.022 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="Lidar_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.07</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <visual name="Lidar_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/Lidae.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+        </material>
+      </visual>
+
+      <!-- Lidar Sensor -->
+      <sensor name="lidar" type="gpu_lidar">
+        <pose>0 0 0.02 0 0 0</pose>
+        <topic>lidar</topic>
+        <update_rate>10</update_rate>
+        <frame_id>Lidar</frame_id>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </lidar>
+      </sensor>
+    </link>
+
+    <joint name="Lidar_joint" type="fixed">
+      <pose relative_to="base_link">-0.008 0 0.176 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>Lidar</child>
+    </joint>
+
+    <!-- ==================== PLUGINS ==================== -->
+    
+    <!-- Differential Drive Plugin -->
+    <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
+      <left_joint>F_LEFT_joint</left_joint>
+      <left_joint>B_LEFT_joint</left_joint>
+      <right_joint>F_RIGHT_joint</right_joint>
+      <right_joint>B_RIGHT_joint</right_joint>
+      <wheel_separation>0.298</wheel_separation>
+      <wheel_radius>0.05</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <max_linear_acceleration>1</max_linear_acceleration>
+      <min_linear_acceleration>-1</min_linear_acceleration>
+      <max_angular_acceleration>2</max_angular_acceleration>
+      <min_angular_acceleration>-2</min_angular_acceleration>
+      <max_linear_velocity>0.25</max_linear_velocity>
+      <min_linear_velocity>-0.25</min_linear_velocity>
+      <max_angular_velocity>0.5</max_angular_velocity>
+      <min_angular_velocity>-0.5</min_angular_velocity>
+    </plugin>
+
+    <!-- Joint State Publisher Plugin -->
+    <plugin filename="ignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
+      <joint_name>F_RIGHT_joint</joint_name>
+      <joint_name>F_LEFT_joint</joint_name>
+      <joint_name>B_RIGHT_joint</joint_name>
+      <joint_name>B_LEFT_joint</joint_name>
+    </plugin>
+
+    <!-- Pose Publisher Plugin -->
+    <plugin filename="ignition-gazebo-pose-publisher-system" name="ignition::gazebo::systems::PosePublisher">
+      <publish_link_pose>true</publish_link_pose>
+      <publish_sensor_pose>true</publish_sensor_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <static_publisher>true</static_publisher>
+      <static_update_frequency>1</static_update_frequency>
+    </plugin>
+
+  </model>
+</sdf>

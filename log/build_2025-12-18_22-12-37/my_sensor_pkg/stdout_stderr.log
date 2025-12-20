@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_encoder_node[0m
+[100%] Built target imu_encoder_node
+-- Install configuration: ""
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/lib/my_sensor_pkg/imu_encoder_node
+-- Set runtime path of "/home/kemo/Sally_ws/install/my_sensor_pkg/lib/my_sensor_pkg/imu_encoder_node" to ""
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/package_run_dependencies/my_sensor_pkg
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/parent_prefix_path/my_sensor_pkg
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/path.sh
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/environment/path.dsv
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.bash
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.sh
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.zsh
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/local_setup.dsv
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.dsv
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/ament_index/resource_index/packages/my_sensor_pkg
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/cmake/my_sensor_pkgConfig.cmake
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/cmake/my_sensor_pkgConfig-version.cmake
+-- Installing: /home/kemo/Sally_ws/install/my_sensor_pkg/share/my_sensor_pkg/package.xml

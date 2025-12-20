@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-72a1761984fbcb4f6f1c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robot_localization",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "localization_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-localization_node-283d1e2412da7dccaca2.json",
+					"name" : "localization_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odom_imu_fusion_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odom_imu_fusion_node-3575b1a0c58f78116cad.json",
+					"name" : "odom_imu_fusion_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odom_tf_fusion_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odom_tf_fusion_node-36e042118a5c7967eca0.json",
+					"name" : "odom_tf_fusion_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "raspberry_localization_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raspberry_localization_node-fa3d56ca13d6f7ad3286.json",
+					"name" : "raspberry_localization_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_localization_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_localization_uninstall-fc89cfaf3dde003fbfe0.json",
+					"name" : "robot_localization_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "standard_localization_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-standard_localization_node-b152e28f8f41fe9cb08a.json",
+					"name" : "standard_localization_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2dafdfa11cc73e2b46e1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kemo/Sally_ws/build/robot_localization",
+		"source" : "/home/kemo/Sally_ws/src/robot-localization(13)"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

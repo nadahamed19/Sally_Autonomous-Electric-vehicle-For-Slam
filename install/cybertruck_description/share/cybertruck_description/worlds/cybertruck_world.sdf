@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="cybertruck_world">
+
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="libignition-gazebo-physics-system.so" name="ignition::gazebo::systems::Physics"></plugin>
+    <plugin filename="libignition-gazebo-user-commands-system.so" name="ignition::gazebo::systems::UserCommands"></plugin>
+    <plugin filename="libignition-gazebo-scene-broadcaster-system.so" name="ignition::gazebo::systems::SceneBroadcaster"></plugin>
+    <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu"></plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 0.1 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="asphalt_ground">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="start_line">
+      <static>true</static>
+      <pose>0 -5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.5 2 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outer_walls">
+      <static>true</static>
+      <link name="link">
+        <collision name="top_col"><pose>0 6 0.15 0 0 0</pose><geometry><box><size>20 0.15 0.3</size></box></geometry></collision>
+        <visual name="top_vis"><pose>0 6 0.15 0 0 0</pose><geometry><box><size>20 0.15 0.3</size></box></geometry><material><ambient>0.8 0 0 1</ambient><diffuse>0.8 0 0 1</diffuse></material></visual>
+        
+        <collision name="bottom_col"><pose>0 -6 0.15 0 0 0</pose><geometry><box><size>20 0.15 0.3</size></box></geometry></collision>
+        <visual name="bottom_vis"><pose>0 -6 0.15 0 0 0</pose><geometry><box><size>20 0.15 0.3</size></box></geometry><material><ambient>0.8 0 0 1</ambient><diffuse>0.8 0 0 1</diffuse></material></visual>
+
+        <collision name="right_col"><pose>10 0 0.15 0 0 0</pose><geometry><box><size>0.15 12.15 0.3</size></box></geometry></collision>
+        <visual name="right_vis"><pose>10 0 0.15 0 0 0</pose><geometry><box><size>0.15 12.15 0.3</size></box></geometry><material><ambient>0.8 0 0 1</ambient><diffuse>0.8 0 0 1</diffuse></material></visual>
+
+        <collision name="left_col"><pose>-10 0 0.15 0 0 0</pose><geometry><box><size>0.15 12.15 0.3</size></box></geometry></collision>
+        <visual name="left_vis"><pose>-10 0 0.15 0 0 0</pose><geometry><box><size>0.15 12.15 0.3</size></box></geometry><material><ambient>0.8 0 0 1</ambient><diffuse>0.8 0 0 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <model name="inner_walls">
+      <static>true</static>
+      <link name="link">
+        <collision name="top_in"><pose>0 4 0.15 0 0 0</pose><geometry><box><size>16 0.15 0.3</size></box></geometry></collision>
+        <visual name="top_in_vis"><pose>0 4 0.15 0 0 0</pose><geometry><box><size>16 0.15 0.3</size></box></geometry><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+
+        <collision name="bottom_in"><pose>0 -4 0.15 0 0 0</pose><geometry><box><size>16 0.15 0.3</size></box></geometry></collision>
+        <visual name="bottom_in_vis"><pose>0 -4 0.15 0 0 0</pose><geometry><box><size>16 0.15 0.3</size></box></geometry><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+
+        <collision name="right_in"><pose>8 0 0.15 0 0 0</pose><geometry><box><size>0.15 8.15 0.3</size></box></geometry></collision>
+        <visual name="right_in_vis"><pose>8 0 0.15 0 0 0</pose><geometry><box><size>0.15 8.15 0.3</size></box></geometry><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+
+        <collision name="left_in"><pose>-8 0 0.15 0 0 0</pose><geometry><box><size>0.15 8.15 0.3</size></box></geometry></collision>
+        <visual name="left_in_vis"><pose>-8 0 0.15 0 0 0</pose><geometry><box><size>0.15 8.15 0.3</size></box></geometry><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <model name="small_box_obstacle">
+      <static>true</static>
+      <pose>-5 5 0.15 0 0 0.4</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.5 0.5 0.3</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.5 0.5 0.3</size></box></geometry>
+        <material><ambient>1 0.5 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual>
+      </link>
+    </model>
+    
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Construction Cone</uri>
+      <name>cone_1</name>
+      <pose>6 -5 0 0 0 0</pose>
+    </include>
+
+    <!-- CYBERTRUCK with integrated lidar -->
+    <include>
+      <uri>model://cybertruck</uri>
+      <name>cybertruck</name>
+      <pose>1 -5 0.1 0 0 3.14</pose>
+    </include>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <track_visual>
+          <name>cybertruck</name>
+          <min_dist>1.5</min_dist>
+          <max_dist>4.0</max_dist>
+        </track_visual>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
